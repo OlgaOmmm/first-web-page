@@ -1,0 +1,186 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans';
+	color: 000;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 58px; /*distance between header and content, in future too*/
+	color: #747374;
+	text-align: right;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding-top: 58px; /*this is also will work for every new section in future*/
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1170px;
+	/* center positioning */
+	margin: 0 auto;	
+}
+
+/*begin of the header*/
+
+.header {
+	background: url('../img/header.jpg') no-repeat center top / cover; 
+	/*background-color: white;*/
+	padding-top: 57px;
+	color: pink;
+	padding-bottom: 322px; 
+	
+}
+
+header a {
+	color: #747374;
+}
+
+.logo {
+	margin-right: 69px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 0.1em; 
+}
+
+.menu a:hover {
+	background: pink;
+	color: #fff;
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.tel {
+	font-size: 17px;
+	text-decoration: none;
+	margin-left: auto; /*setting in the right side*/
+	letter-spacing: 0.1em; /*space between text symbols*/
+	background: #fff; /*nice grey is #747374*/
+	color: pink;
+}
+
+.tel:hover {
+	background: pink; /*nice grey is #747374*/
+	color: #fff;
+}
+
+.nav {
+	display: flex;
+	align-items: center; /*header*/
+	/*margin-top: 57px; keeps header img so we using padding */
+	padding-top: 57px;
+}
+
+/*end of the header*/
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 116px;
+}
+
+.offer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.offer h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em;	<>
+}
+
+.btn {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px, 47px;
+	border: 1px solid #ccc;
+	width: 238px;
+}
+
+.btn:hover {
+	background: pink;
+	color: #fff;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between; /*pushes the left and right containers on the sides*/
+	color: #747374;
+}
+
+.description p {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-align: justify; /*uniform filling of space with text */
+	line-height: 1.62em;
+}
+
+.desc-left, .desc-right {
+	width: 567px;
+} 
+
+.gallery {
+	margin-top: 67px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text {
+	font-size: 15px;
+	font-family: 'Open Sans';
+	display: flex;
+	padding-top: 58px;
+	
+}
+
+.footer-text p {
+	margin-right: 67px;	
+	color: #747374;
+}
+
+.pinktext {
+	color: pink;
+}
