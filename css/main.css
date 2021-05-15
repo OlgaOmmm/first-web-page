@@ -97,6 +97,7 @@ header a {
 	letter-spacing: 0.1em; /*space between text symbols*/
 	background: #fff; /*nice grey is #747374*/
 	color: pink;
+	transition: all 0.5s ease;
 }
 
 .tel:hover {
@@ -138,6 +139,7 @@ header a {
 	padding: 17px, 47px;
 	border: 1px solid #ccc;
 	width: 238px;
+	transition: all 0.5s ease;
 }
 
 .btn:hover {
