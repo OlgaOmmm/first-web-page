@@ -27,6 +27,11 @@ h3 {
 	font-size: 25px;
 }
 
+h4 {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -95,9 +100,10 @@ header a {
 	text-decoration: none;
 	margin-left: auto; /*setting in the right side*/
 	letter-spacing: 0.1em; /*space between text symbols*/
-	background: #fff; /*nice grey is #747374*/
+	background: #fff; 
 	color: pink;
 	transition: all 0.5s ease;
+
 }
 
 .tel:hover {
@@ -154,15 +160,19 @@ header a {
 }
 
 .description p {
-	font-family: 'Open Sans';
 	font-weight: 400;
 	text-align: justify; /*uniform filling of space with text */
 	line-height: 1.62em;
 }
 
-.desc-left, .desc-right {
-	width: 567px;
+.desc-text {
+	width: 770px;
 } 
+
+.desc-img img {
+	margin-bottom: 58px;
+
+}
 
 .gallery {
 	margin-top: 67px;
@@ -172,7 +182,6 @@ header a {
 
 .footer-text {
 	font-size: 15px;
-	font-family: 'Open Sans';
 	display: flex;
 	padding-top: 58px;
 	
@@ -185,4 +194,20 @@ header a {
 
 .pinktext {
 	color: pink;
+}
+
+.why-description {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.why-block {
+	width: 350px;
+	display: flex;
+}
+
+.why-desc {
+	padding-left: 15px;
+	color: #747374;
 }
