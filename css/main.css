@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
 	font-size: 50px;
 	margin-bottom: 58px; /*distance between header and content, in future too*/
-	color: #747374;
+	color: #747374; /*nice grey*/
 	text-align: right;
 }
 
@@ -64,7 +64,6 @@ ul, li {
 
 header {
 	background: url('../img/header.jpg') no-repeat center top / cover; 
-	/*background-color: white;*/
 	padding-top: 57px;
 	color: pink;
 	padding-bottom: 322px; 
@@ -75,7 +74,7 @@ header a {
 	color: #747374;
 }
 
-.HeaderNavigation_Sub {
+.HeaderNavigationGroup {
 	display: flex;
 	align-items: center;
 	/*margin-top: 57px; keeps header img so we using padding */
@@ -118,22 +117,22 @@ header a {
 }
 
 .HeaderPhone:hover {
-	background: pink; /*nice grey is #747374*/
+	background: pink; 
 	color: #fff;
 }
 
 
-.HeaderOffer_Sub {
+.HeaderOfferGroup {
 	text-transform: uppercase;
 	margin-top: 116px;
 }
 
-.HeaderOffer_Sub p {
+.HeaderOfferGroup p {
 	font-size: 30px;
 	letter-spacing: 0.1em;
 }
 
-.HeaderOffer_Sub h1 {
+.HeaderOfferGroup h1 {
 	font-size: 100px;
 	margin-bottom: 19px;
 	margin-top: -9px;
@@ -156,32 +155,10 @@ header a {
 	color: #fff;
 }
 
-/*About_Section: ____________________________________*/
-
-.About_Sub {
-	display: flex;
-	justify-content: space-between; /*pushes the left and right containers on the sides*/
-	color: #747374;
-}
-
-.About_Sub p {
-	font-weight: 400;
-	text-align: justify; /*uniform filling of space with text */
-	line-height: 1.62em;
-}
-
-.About_1 img {
-	padding-bottom: 58px; 
-}
-
-.About_2 {
-	width: 770px;
-} 
-
 /*WhyChooseUs_Section: ____________________________________*/
 
 
-.WhyChooseUs_Sub {
+.WhyChooseUsGroup {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -197,10 +174,33 @@ header a {
 	color: #747374;
 }
 
+
+/*About_Section: ____________________________________*/
+
+.AboutGroup {
+	display: flex;
+	justify-content: space-between; /*pushes the left and right containers on the sides*/
+	color: #747374;
+}
+
+.AboutGroup p {
+	font-weight: 400;
+	text-align: justify; /*uniform filling of space with text */
+	line-height: 1.62em;
+}
+
+.About_1 img {
+	padding-bottom: 58px; 
+}
+
+.About_2 {
+	width: 770px;
+} 
+
 /*Gallery_Section: ____________________________________*/
 
 
-.Gallery_Sub {
+.GalleryGroup {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 20px;
@@ -209,13 +209,13 @@ header a {
 /*footer: ____________________________________*/
 
 
-.Footer_Sub {
+.FooterGroup {
 	font-size: 15px;
 	display: flex;
 	padding-top: 58px;
 }
 
-.Footer_Sub p {
+.FooterGroup p {
 	margin-right: 67px;	
 	color: #747374;
 }
