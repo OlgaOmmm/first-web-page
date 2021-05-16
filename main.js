@@ -1,1 +1,1 @@
-document.getElementById("FooterYear").innerHTML = new Date().getFullYear();
+document.getElementById("FooterYear_Sub").innerHTML = new Date().getFullYear();
