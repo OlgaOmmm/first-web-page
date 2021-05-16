@@ -50,15 +50,19 @@ ul, li {
 	padding: 0;
 }
 
-.container {
+.ContainerGroup {
 	width: 1170px;
 	/* center positioning */
 	margin: 0 auto;	
 }
 
-/*begin of the header*/
+.ColoredText_Sub {
+	color: pink;
+}
 
-.header {
+/*header: ____________________________________*/
+
+header {
 	background: url('../img/header.jpg') no-repeat center top / cover; 
 	/*background-color: white;*/
 	padding-top: 57px;
@@ -71,31 +75,38 @@ header a {
 	color: #747374;
 }
 
-.logo {
+.HeaderNavigation_Sub {
+	display: flex;
+	align-items: center;
+	/*margin-top: 57px; keeps header img so we using padding */
+	padding-top: 57px;
+}
+
+.HeaderLogo_Img {
 	margin-right: 69px;
 }
 
-.menu {
+.HeaderMenu {
 	display: flex;
 }
 
-.menu li a {
+.HeaderMenu li a {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 14px;
 	letter-spacing: 0.1em; 
 }
 
-.menu a:hover {
+.HeaderMenu a:hover {
 	background: pink;
 	color: #fff;
 }
 
-.menu li {
+.HeaderMenu li {
 	margin-right: 40px;
 }
 
-.tel {
+.HeaderPhone {
 	font-size: 17px;
 	text-decoration: none;
 	margin-left: auto; /*setting in the right side*/
@@ -106,38 +117,30 @@ header a {
 
 }
 
-.tel:hover {
+.HeaderPhone:hover {
 	background: pink; /*nice grey is #747374*/
 	color: #fff;
 }
 
-.nav {
-	display: flex;
-	align-items: center; /*header*/
-	/*margin-top: 57px; keeps header img so we using padding */
-	padding-top: 57px;
-}
 
-/*end of the header*/
-
-.offer {
+.HeaderOffer_Sub {
 	text-transform: uppercase;
 	margin-top: 116px;
 }
 
-.offer p {
+.HeaderOffer_Sub p {
 	font-size: 30px;
 	letter-spacing: 0.1em;
 }
 
-.offer h1 {
+.HeaderOffer_Sub h1 {
 	font-size: 100px;
 	margin-bottom: 19px;
 	margin-top: -9px;
 	letter-spacing: 0.02em;	<>
 }
 
-.btn {
+.OpenPetCatalogBT {
 	display: block;
 	font-size: 17px;
 	text-align: center;
@@ -148,66 +151,71 @@ header a {
 	transition: all 0.5s ease;
 }
 
-.btn:hover {
+.OpenPetCatalogBT:hover {
 	background: pink;
 	color: #fff;
 }
 
-.description {
+/*About_Section: ____________________________________*/
+
+.About_Sub {
 	display: flex;
 	justify-content: space-between; /*pushes the left and right containers on the sides*/
 	color: #747374;
 }
 
-.description p {
+.About_Sub p {
 	font-weight: 400;
 	text-align: justify; /*uniform filling of space with text */
 	line-height: 1.62em;
 }
 
-.desc-text {
+.About_1 img {
+	padding-bottom: 58px; 
+}
+
+.About_2 {
 	width: 770px;
 } 
 
-.desc-img img {
-	margin-bottom: 58px;
+/*WhyChooseUs_Section: ____________________________________*/
 
-}
 
-.gallery {
-	margin-top: 67px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.footer-text {
-	font-size: 15px;
-	display: flex;
-	padding-top: 58px;
-	
-}
-
-.footer-text p {
-	margin-right: 67px;	
-	color: #747374;
-}
-
-.pinktext {
-	color: pink;
-}
-
-.why-description {
+.WhyChooseUs_Sub {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.why-block {
+.WhyChooseUs_1 {
 	width: 350px;
 	display: flex;
 }
 
-.why-desc {
+.WhyChooseUs_2 {
 	padding-left: 15px;
+	color: #747374;
+}
+
+/*Gallery_Section: ____________________________________*/
+
+
+.Gallery_Sub {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+/*footer: ____________________________________*/
+
+
+.Footer_Sub {
+	font-size: 15px;
+	display: flex;
+	padding-top: 58px;
+}
+
+.Footer_Sub p {
+	margin-right: 67px;	
 	color: #747374;
 }
