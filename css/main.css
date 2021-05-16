@@ -18,9 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 50px;
-	margin-bottom: 58px; /*distance between header and content, in future too*/
+	margin-bottom: 28px; /*distance between header and content, in future too*/
 	color: #747374; /*nice grey*/
 	text-align: right;
+	padding-right: 30px;
 }
 
 h3 {
@@ -51,7 +52,7 @@ ul, li {
 }
 
 .ContainerGroup {
-	width: 1170px;
+	width: 1250px;
 	/* center positioning */
 	margin: 0 auto;	
 }
@@ -186,7 +187,7 @@ header a {
 .AboutGroup p {
 	font-weight: 400;
 	text-align: justify; /*uniform filling of space with text */
-	line-height: 1.62em;
+	line-height: 1.92em;
 }
 
 .About_1 img {
@@ -199,12 +200,19 @@ header a {
 
 /*Gallery_Section: ____________________________________*/
 
+.Gallery_Section {
+	padding: 0 60px;
+}
 
 .GalleryGroup {
+	padding: 0 0 0 60px;
+}
+
+.Gallery_1 {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 20px;
 }
+
 
 /*footer: ____________________________________*/
 
@@ -216,6 +224,7 @@ header a {
 }
 
 .FooterGroup p {
-	margin-right: 67px;	
 	color: #747374;
+	text-align: left;
+	padding-left: 60px;
 }
