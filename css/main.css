@@ -8,6 +8,7 @@ body {
 
 * {
 	box-sizing: border-box;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,7 +22,7 @@ h2 {
 	margin-bottom: 28px; /*distance between header and content, in future too*/
 	color: #747374; /*nice grey*/
 	text-align: right;
-	padding-right: 30px;
+	padding-right: 60px;
 }
 
 h3 {
@@ -38,7 +39,7 @@ a {
 }
 
 section {
-	padding-top: 58px; /*this is also will work for every new section in future*/
+	padding-top: 68px; /*this is also will work for every new section in future*/
 }
 
 p {
@@ -52,9 +53,10 @@ ul, li {
 }
 
 .ContainerGroup {
-	width: 1250px;
+	width: 1125px;
 	/* center positioning */
 	margin: 0 auto;	
+	
 }
 
 .ColoredText_Sub {
@@ -67,8 +69,7 @@ header {
 	background: url('../img/header.jpg') no-repeat center top / cover; 
 	padding-top: 57px;
 	color: pink;
-	padding-bottom: 322px; 
-	
+	padding-bottom: 322px;
 }
 
 header a {
@@ -80,6 +81,7 @@ header a {
 	align-items: center;
 	/*margin-top: 57px; keeps header img so we using padding */
 	padding-top: 57px;
+	
 }
 
 .HeaderLogo_Img {
@@ -137,7 +139,8 @@ header a {
 	font-size: 100px;
 	margin-bottom: 19px;
 	margin-top: -9px;
-	letter-spacing: 0.02em;	<>
+	letter-spacing: 0.02em;	
+	color: pink;
 }
 
 .OpenPetCatalogBT {
@@ -158,6 +161,9 @@ header a {
 
 /*WhyChooseUs_Section: ____________________________________*/
 
+.WhyChooseUs_Section {
+	background-color: #fff;
+}
 
 .WhyChooseUsGroup {
 	display: flex;
@@ -175,8 +181,74 @@ header a {
 	color: #747374;
 }
 
+/*PetCatalog_Section: ____________________________________*/
+
+.PetCatalog_Section {
+	background-color: #fff;
+	padding-right: 25px;
+
+}
+
+.PetColumnGroup {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.PetRowGroup {
+display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.AddToCartBT {
+	display: block;
+	padding: 0;
+	border: none; 
+	width: 42px;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+}
+
+.PetGroup {
+	margin: 0 10px;
+}
+
+.Pet_Img img{
+	width: 250px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 17px; /*round edges*/
+}
+
+.PetInfoGroup h3 {
+	font-size: 21px;
+	color: #747374;
+}
+
+.PriceInfoGroup {
+	width: 270px;
+	display: flex;
+	flex-flow: row nowrap; 
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.PetPrice_Sub {
+	font-size: 20px;
+	font-weight: 700;
+	color: #747374;
+}
 
 /*About_Section: ____________________________________*/
+
+.About_Section {
+	
+}
 
 .AboutGroup {
 	display: flex;
@@ -201,21 +273,27 @@ header a {
 /*Gallery_Section: ____________________________________*/
 
 .Gallery_Section {
-	padding: 0 60px;
+	padding: 0 55px;
+	background-color: #fff;
+	width: 1385px;
 }
 
 .GalleryGroup {
-	padding: 0 0 0 60px;
+	padding: 0 70px;
 }
 
 .Gallery_1 {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 5px;
+	padding-left: 70px;
 }
-
 
 /*footer: ____________________________________*/
 
+footer {
+	background-color: #fff;
+}
 
 .FooterGroup {
 	font-size: 15px;
@@ -226,5 +304,5 @@ header a {
 .FooterGroup p {
 	color: #747374;
 	text-align: left;
-	padding-left: 60px;
+	padding-left: 20px;
 }
