@@ -8,11 +8,10 @@
 </head>
 	
 <body>
-	<header>
+	<header id="Header_Section" class="Header_Section">
 		<div class="ContainerGroup">
 			<div class="HeaderNavigationGroup">
 				<img src="img/logo.png" alt="dog&cat" class="HeaderLogo_Img">
-				<!-- height of block = height of logo.png -->
 				<ul class="HeaderMenu">
 					<li> 
 						<a href="#WhyChooseUs_Section">	
@@ -30,8 +29,8 @@
 						</a>
 					</li>
 					<li> 
-						<a href="# ">
-							Contacts
+						<a href="#Feedback_Section">
+							Contact Us
 						</a>
 					</li>
 				</ul>
@@ -211,7 +210,28 @@
 		</div>
 	</section>
 	
-	<!-- Contacts_Section - soon-->
+	<section id="Feedback_Section" class="Feedback_Section">
+		<div class="ContainerGroup">
+			<h2><span class="ColoredText_Sub">Feedback</span> form</h2>
+			<div class="FeedbackGroup">
+				<div class="Feedback_1">
+					<p>Leave your message here and we will contact you:</p>
+					<div class="FeedbackTextInputGroup">
+						<textarea name="FeedbackTextarea"></textarea>
+					</div>
+					<div class="FeedbackTextInputGroup">
+						<input type="text" placeholder="Your name">
+					</div>
+					<div class="FeedbackTextInputGroup">
+						<input type="text" placeholder="Your email">
+					</div>
+					<a href="#" class="FeedbackBT">SEND</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<a href="#Header_Section" id="HomeBT">HOME</a>
 	
 	<footer>
 		<div class="ContainerGroup">
