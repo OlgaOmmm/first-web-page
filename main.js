@@ -15,7 +15,10 @@ const feedbackTextList = document.querySelectorAll('.FeedbackTextInputGroup')
 const feedbackTextarea = feedbackTextList[0].querySelector('textarea')
 const feedbackInputName = feedbackTextList[1].querySelector('input')
 const feedbackInputEmail = feedbackTextList[2].querySelector('input')
-let colorCounter = 0
+
+feedbackTextarea.title = 'Please input your message'
+feedbackInputName.title = 'Please input your name'
+feedbackInputEmail.title = 'Please input your email'
 
 function TextboxOnClick (node) {
     node.placeholder = ''
@@ -28,4 +31,3 @@ function TextboxOnClick (node) {
 feedbackTextarea.addEventListener('click',  (event) => {TextboxOnClick (feedbackTextarea)})
 feedbackInputName.addEventListener('click',  (event) => {TextboxOnClick (feedbackInputName)})
 feedbackInputEmail.addEventListener('click',  (event) => {TextboxOnClick (feedbackInputEmail)})
-
