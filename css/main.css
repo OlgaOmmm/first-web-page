@@ -1,8 +1,9 @@
+
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Open Sans';
-	color: 000;
+	color: #000;
 	font-size: 16px;
 }
 
@@ -66,7 +67,7 @@ ul, li {
 
 
 #HomeBT {      
-    width: 70px;   
+    width: 120px;
     height: 27px;   
     border-radius: 4px;   
     margin: 30px;   
@@ -75,31 +76,52 @@ ul, li {
     right: 30px;   
     z-index: 1000; 
     display: inline-block;   
-   border: 1px solid #ccc;
+    border: 1px solid #ccc;
 	
 	font-size: 17px;
 	letter-spacing: 0.1em;
 	text-align: center; 
 
-	background-color: pink; 
-	color: #fff;	
+	/*background-color: pink;*/
+	animation: blink 10s infinite;
+	-webkit-animation: blink 10s infinite;
+	color: #fff;
+
+	transition: all 0.5s ease;
 } 
 
 #HomeBT:hover {   
-   cursor: pointer;   
-   background-color: #fff; 
-   color: #747374;
+    cursor: pointer;   
+    background-color: #fff;
+	animation: paused;
+    color: #747374;
 } 
 
 #HomeBT:active {
-	background-color: pink; 
+	background-color: pink;
 	color: #fff;
+}
+
+/*HOME button animation: */
+@keyframes blink {
+	0% {background-color: #fdc0ca;}
+	33% {background-color: #fc97a8;}
+	66% {background-color: #ffaaba;}
+	100% {background-color: #fdc0ca;}
+}
+@-webkit-keyframes blink {
+	0% {background-color: #fdc0ca;}
+	33% {background-color: #fc97a8;}
+	66% {background-color: #ffaaba;}
+	100% {background-color: #fdc0ca	;}
 }
 
 /*header: ____________________________________*/
 
 header {
-	background: url('../img/header.jpg') no-repeat center top / cover; 
+	background: url('../img/header.jpg') no-repeat center top / cover;
+	background-color: rgba(213, 227, 239, 0.2); /*color mask*/
+	background-blend-mode: hard-light; /*color mask*/
 	padding-top: 57px;
 	color: pink;
 	padding-bottom: 322px;
@@ -152,7 +174,7 @@ header a {
 }
 
 .HeaderPhone:hover {
-	background: pink; 
+	background: pink;
 	color: #fff;
 }
 
@@ -284,6 +306,12 @@ display: flex;
 	padding: 0 20px;
 }
 
+.PriceInfoGroup p {
+	font-size: 16px;
+	font-weight: 700;
+	color: #747374;
+}
+
 .PetPrice_Sub {
 	font-size: 20px;
 	font-weight: 700;
@@ -308,33 +336,31 @@ display: flex;
 }
 
 .About_1 img {
-	padding-bottom: 28px; 
+	padding-bottom: 28px;
 }
 
 .About_2 {
 	width: 750px;
+	height: 100%;
+	background: #fff;
 } 
 
 /*Gallery_Section: ____________________________________*/
 
 .Gallery_Section {
-	padding: 0 0 0 10px;
+	padding: 0 0 0 15px;
 	background-color: #fff;
-	width: 1385px;
-}
-
-.Gallery_Section h2 {
-	margin-right: 60px;
+	width: 1500px;
 }
 
 .GalleryGroup {
-	padding: 0 65px;
+	padding: 0 0;
 }
 
 .Gallery_1 {
 	display: flex;
 	justify-content: space-between;
-	padding-left: 120px;
+	padding-left: 0;
 }
 
 /*Feedback_Section: ____________________________________*/
@@ -345,8 +371,9 @@ display: flex;
 	align-items: center;
 	margin: 0;
 	padding-right: 70px;
-	padding-bottom: 100px;
-	background: url('../img/feedback.jpg') no-repeat center top / cover; 
+	padding-bottom: 250px;
+	background: url('../img/feedback.jpg') no-repeat center top / cover;
+	clip-path: polygon(0 30%, 0 15%, 100% 0, 100% 85%, 0 100%, 0 100%, 0 82%, 0% 43%, 0 9%);
 	height: 550px;
 }
 
@@ -356,7 +383,7 @@ display: flex;
 }
 
 .Feedback_1 p {
-	color: #747374;
+	color: #525252;
 	margin: 10px;
 	font-size: 16px;
 	width: 200px;
@@ -370,13 +397,17 @@ display: flex;
 .FeedbackTextInputGroup input {
 	width: 200px;
 	height: 20px;
+	color: #323232;
 	background-color: #fff;
+	border: 1px solid #ccc
 }
 
 .FeedbackTextInputGroup textarea {
 	width: 200px;
 	height: 150px;
+	color: #323232;
 	background-color: #fff;
+	border: 1px solid #ccc
 }
 
 .FeedbackBT {
@@ -391,7 +422,7 @@ display: flex;
 	border-radius: 4px;  
 	margin: 10px;
 	background: #fff;
-	color: #747374;
+	color: #525252;
 }
 
 .FeedbackBT:hover {
