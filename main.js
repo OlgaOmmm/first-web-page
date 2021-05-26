@@ -1,33 +1,32 @@
+var dampc = {}
+dampc.feedbackForm = document.getElementById('FeedbackForm')
+dampc.feedbackBT = document.getElementById('FeedbackBT')
+dampc.feedbackTextList = document.querySelectorAll('.FeedbackTextInputGroup')
+dampc.feedbackTextarea = dampc.feedbackTextList[0].querySelector('textarea')
+dampc.feedbackInputName = dampc.feedbackTextList[1].querySelector('input')
+dampc.feedbackInputEmail = dampc.feedbackTextList[2].querySelector('input')
+
 //-----------------footer: dynamic year-----------------
 
 document.getElementById("FooterYear_Sub").innerHTML = new Date().getFullYear();
 
 //-----------------Feedback_Section: FeedbackForm.submit() event; .FeedbackTextInputGroup event
+
 //FeedbackForm.submit() event:
-const feedbackForm = document.getElementById('FeedbackForm')
-const feedbackBT = document.getElementById('FeedbackBT')
-feedbackBT.addEventListener('click', (event)=> {feedbackForm.submit()})
+dampc.feedbackBT.addEventListener('click', (event)=> {dampc.feedbackForm.submit()})
 
 //.FeedbackTextInputGroup event:
-const feedbackTextList = document.querySelectorAll('.FeedbackTextInputGroup')
-//console.log(feedbackTextList[0],feedbackTextList[1], feedbackTextList[2]]) //input: message, name, email
-
-const feedbackTextarea = feedbackTextList[0].querySelector('textarea')
-const feedbackInputName = feedbackTextList[1].querySelector('input')
-const feedbackInputEmail = feedbackTextList[2].querySelector('input')
-
-feedbackTextarea.title = 'Please input your message'
-feedbackInputName.title = 'Please input your name'
-feedbackInputEmail.title = 'Please input your email'
-
-function TextboxOnClick (node) {
+dampc.feedbackTextarea.title = 'Please input your message'
+dampc.feedbackInputName.title = 'Please input your name'
+dampc.feedbackInputEmail.title = 'Please input your email'
+dampc.TextboxOnClick = function (node) {
     node.placeholder = ''
-    feedbackTextarea.style.backgroundColor = '#fff'
-    feedbackInputName.style.backgroundColor = '#fff'
-    feedbackInputEmail.style.backgroundColor = '#fff'
+    dampc.feedbackTextarea.style.backgroundColor = '#fff'
+    dampc.feedbackInputName.style.backgroundColor = '#fff'
+    dampc.feedbackInputEmail.style.backgroundColor = '#fff'
     node.style.backgroundColor = '#fde6ea'
 }
+dampc.feedbackTextarea.addEventListener('click',  (event) => {dampc.TextboxOnClick (dampc.feedbackTextarea)})
+dampc.feedbackInputName.addEventListener('click',  (event) => {dampc.TextboxOnClick (dampc.feedbackInputName)})
+dampc.feedbackInputEmail.addEventListener('click',  (event) => {dampc.TextboxOnClick (dampc.feedbackInputEmail)})
 
-feedbackTextarea.addEventListener('click',  (event) => {TextboxOnClick (feedbackTextarea)})
-feedbackInputName.addEventListener('click',  (event) => {TextboxOnClick (feedbackInputName)})
-feedbackInputEmail.addEventListener('click',  (event) => {TextboxOnClick (feedbackInputEmail)})
