@@ -1,0 +1,1 @@
+// fullsize images for gallery, 525x525 px 
