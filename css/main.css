@@ -353,14 +353,18 @@ display: flex;
 	width: 1500px;
 }
 
-.GalleryGroup {
-	padding: 0 0;
+.Gallery_Section figure {
+	display: flex;
+	display: flex;
+	justify-content: center;
+
 }
 
-.Gallery_1 {
+.GalleryGroup {
+	padding: 0 0;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 0;
+	cursor: pointer;
 }
 
 /*Feedback_Section: ____________________________________*/
